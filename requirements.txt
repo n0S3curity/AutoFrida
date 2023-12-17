@@ -1,0 +1,8 @@
+shlex
+threading
+tkinter
+pickle
+customtkinter
+frida
+frida-tools
+adb
