@@ -6,3 +6,4 @@ customtkinter
 frida
 frida-tools
 adb
+subprocess
