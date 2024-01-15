@@ -72,10 +72,23 @@ python autoFrida.py
 ![image](https://github.com/n0S3curity/AutoFrida/assets/106635812/6a02e3d9-4ae9-402a-8397-234e19f1e378)
 
 ## Exploit tab
-![image](https://github.com/n0S3curity/AutoFrida/assets/106635812/8ef8bc7d-bba0-4c01-89de-e8a6e3b7e882)
+![image](https://github.com/n0S3curity/AutoFrida/assets/106635812/5d453d52-127a-4c8c-94fc-35ac4c25e2e5)
+
 
 ## IPC Traffic tab
 ![image](https://github.com/n0S3curity/AutoFrida/assets/106635812/029da4fe-0766-4769-bad7-e55daab020dd)
+
+## Device packages tab
+![image](https://github.com/n0S3curity/AutoFrida/assets/106635812/e5c342eb-ebeb-4a7c-ba06-5972d4c3b0c4)
+
+## Static analyze
+![image](https://github.com/n0S3curity/AutoFrida/assets/106635812/1690bec3-7f71-42fe-b494-3989fbfccfed)
+
+## Dynamic analyze 
+![image](https://github.com/n0S3curity/AutoFrida/assets/106635812/0edb2e58-e964-46fa-89f8-ecc197d1f2e1)
+
+## Findings export 
+![image](https://github.com/n0S3curity/AutoFrida/assets/106635812/ba1096cb-ccc8-4dd9-a4b6-0028a438aa6e)
 
 
 
