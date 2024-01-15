@@ -36,6 +36,7 @@ class FridaApp():
         self.exported_activities = []
         self.exported_services = []
         self.exported_receivers = []
+        self.exported_providers = []
         self.uri_list = []
 
     def check_current_activity(self):
@@ -53,8 +54,8 @@ class FridaApp():
 
     def on_message(self, message, data):
         try:
-            # if 'LoggedMessage' not in message:
-            #     print("Received message:", message)
+            if 'LoggedMessage' not in message:
+                print("Received message:", message)
             if 'payload' in message:
                 payload = message['payload']
                 if 'bytes!' in message['payload']:
@@ -94,10 +95,11 @@ class FridaApp():
                 # elif 'LoggedMessage' not in payload:
                 #     self.GUIapp.print_to_console_textBox(text=str(message))
 
-                if 'exportedActivities' in payload and 'exportedServices' in payload and 'exportedReceivers' in payload:
+                if 'exportedActivities' in payload and 'exportedServices' in payload and 'exportedReceivers' in payload and 'exportedProviders' in payload:
                     self.exported_activities = payload['exportedActivities'] + ['Exported Activities']
                     self.exported_services = payload['exportedServices'] + ['Exported Services']
                     self.exported_receivers = payload['exportedReceivers'] + ['Exported Receivers']
+                    self.exported_providers = payload['exportedProviders'] + ['Exported Providers']
                     self.create_exported_components_lists()
                 if 'type' in payload:
                     if payload['type'] == 'ClassesSearchResult':
@@ -179,6 +181,7 @@ class FridaApp():
         self.GUIapp.exported_activities_menu.configure(values=self.exported_activities)
         self.GUIapp.exported_services_menu.configure(values=self.exported_services)
         self.GUIapp.exported_receivers_menu.configure(values=self.exported_receivers)
+        self.GUIapp.exported_providers_menu.configure(values=self.exported_providers)
         self.GUIapp.print_to_console_textBox(text='Lists of exported components updated! , check Exploit tab',
                                              color='green')
 
