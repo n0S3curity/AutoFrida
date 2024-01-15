@@ -1,19 +1,19 @@
 # AutoFrida
 Frida Android Security Tool is a Python GUI application powered by Frida to perform dynamic and static analysis of Android applications.
-It provides an intuitive interface for attaching to processes, monitoring file system and decrypting app data at runtime. 
+It provides an intuitive interface for attaching to processes, monitoring file system, and decrypting app data at runtime. 
 
 # Key Features
   * Attach to running apps or spawn app processes with Frida
   * Load Frida scripts to hook into app processes
   * Monitor file system access in real-time
-  * IPC Traffic - watch all IPC traffic made by the app - intents wit all their details
+  * IPC Traffic - watch all IPC traffic made by the app - intents with all their details
   * Exploit - see exported components and fuzz exported activities
   * Search in classes loaded by the app
   * File explorer -  explore device files, create delete or upload
   * Dump/show used files to PC
-  * Bypass root detection, certificate pinning, debugger checks and more
+  * Bypass root detection, certificate pinning, debugger checks, and more
   * Support for custom scripts
-  * Analyze logs automaticlly - find sensitive data by regexes and alert for matches
+  * Analyze logs automatically - find sensitive data by regexes and alert for matches
   * sign APK files
   
   
@@ -22,8 +22,8 @@ It provides an intuitive interface for attaching to processes, monitoring file s
   - Frida server running on the Android device
   - USB debugging enabled on the Android device
   - Install python requirements from requiremets.txt
-  - Make sure that you have adb installed and also in PATH
-  - Basic knowledge of JavaScript for writing custom scripts (not neccessary)
+  - Make sure that you have ADB installed and also in PATH
+  - Basic knowledge of JavaScript for writing custom scripts (not necessary)
 
 
 # Usage
@@ -54,6 +54,32 @@ python autoFrida.py
   Bypass certificate pinning, root detection etc...
   Write your scripts in JavaScript to extend the functionality.
 
+
+# Screenshots
+## Main screen
+![image](https://github.com/n0S3curity/AutoFrida/assets/106635812/97c49cab-34c2-4835-9a31-1a8d7679e561)
+
+## File Manager tab
+![image](https://github.com/n0S3curity/AutoFrida/assets/106635812/e7c214aa-b5d6-4cc1-82de-f136b3a1e96a)
+
+## File Explorer tab
+![image](https://github.com/n0S3curity/AutoFrida/assets/106635812/6348650e-5ddb-4b38-9e7d-fcbebdd4e5a2)
+
+## Classes tab
+![image](https://github.com/n0S3curity/AutoFrida/assets/106635812/29dcec9f-fbd7-4533-91ca-7d67dcf444cf)
+
+## Logs tab
+![image](https://github.com/n0S3curity/AutoFrida/assets/106635812/6a02e3d9-4ae9-402a-8397-234e19f1e378)
+
+## Exploit tab
+![image](https://github.com/n0S3curity/AutoFrida/assets/106635812/8ef8bc7d-bba0-4c01-89de-e8a6e3b7e882)
+
+## IPC Traffic tab
+![image](https://github.com/n0S3curity/AutoFrida/assets/106635812/029da4fe-0766-4769-bad7-e55daab020dd)
+
+
+
+
 # Troubleshooting
   - See the Frida documentation for help with setting up the environment and troubleshooting connection issues with devices.
-  - Make sure that Frida is running on your phone only when trying to attach - stop Frida in phone when trying to spawn.
+  - Make sure that Frida is running on your phone only when trying to attach - stop Frida in the phone when trying to spawn.
