@@ -237,6 +237,11 @@ class App(customtkinter.CTk):
         self.exported_receivers_menu.grid(row=3, column=0, padx=0, pady=(5, 5), sticky="ew")
         self.exported_receivers_menu.set("Exported Receivers")
 
+        self.exported_providers_menu = customtkinter.CTkOptionMenu(self.consoles_tabview.tab("Exploit"),
+                                                                   dynamic_resizing=True, values=[])
+        self.exported_providers_menu.grid(row=4, column=0, padx=0, pady=(5, 5), sticky="ew")
+        self.exported_providers_menu.set("Exported Providers")
+
         # create console_textbox
         self.logs_textbox = customtkinter.CTkTextbox(self.consoles_tabview.tab("Logs"), state="disabled",
                                                      border_width=2,
