@@ -7,6 +7,7 @@ It provides an intuitive interface for attaching to processes, monitoring file s
   * Load Frida scripts to hook into app processes
   * Monitor file system access in real-time
   * IPC Traffic - watch all IPC traffic made by the app - intents with all their details
+  * URI - catch all URI schemes used to exploit DeepLinks
   * Exploit - see exported components and fuzz exported activities
   * Search in classes loaded by the app
   * File explorer -  explore device files, create delete or upload
