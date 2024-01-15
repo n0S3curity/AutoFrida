@@ -1,9 +1,3 @@
-shlex
-threading
-tkinter
-pickle
-customtkinter
-frida
-frida-tools
-adb
-subprocess
+customtkinter==5.2.1
+fpdf==1.7.2
+frida==16.1.0
